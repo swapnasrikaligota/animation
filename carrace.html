@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div{
+            margin:10px;
+        }
+        @keyframes carrace{
+        0%{
+            transform: translateX(200px);
+        }
+        100%{
+            transform: translateX(1000px);
+        }
+    }
+    .d1{
+        animation:carrace 2s linear 1;
+    }
+    @keyframes car{
+        5%{
+            transform: translateX(300px);
+        }
+        100%{
+            transform: translateX(800px);
+        }
+    }
+    .d2{
+        animation:car 2s ease-in-out 1;
+    }
+    @keyframes carr{
+        5%{
+            transform: translateX(500px);
+        }
+        100%{
+            transform: translateX(900px);
+        }
+    }
+    .d3{
+        animation:carr 2s ease-out 1;
+    }
+    @keyframes sport{
+        5%{
+            transform: translateX(700px);
+        }
+        100%{
+            transform: translateX(1200px);
+        }
+    }
+    .d4{
+        animation:sport 2s ease-in 1;
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="d1">
+            <img src="./car1.jpg" height="180px" width="200">
+        </div>
+        <div class="d2">
+            <img src="./car2.jpg" height="180px" width="200">
+        </div>
+        <div class="d3">
+            <img src="./car3.jpg" height="180px" width="200">
+        </div>
+        <div class="d4">
+            <img src="./car4.jpg" height="180px" width="200">
+        </div>
+    </div>
+    
+</body>
+</html>

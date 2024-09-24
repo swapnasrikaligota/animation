@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d5{
+            position:relative;
+            bottom:515px;
+            left:30px;
+            border-radius: 50px;
+            width:40px;
+            height:190px;
+            background-color: rgb(240, 8, 116);
+        }
+        #d1{
+            height:100px;
+            width:100px;
+            background-color:rgb(198, 27, 27);
+            border-radius: 200px;
+            animation:spin 1s linear infinite;
+            z-index:2;
+            animation:spin 1s linear infinite ;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:rgb(240, 250, 96);
+        }
+        #d2{
+            width:200px;
+            height:40px;
+            border-radius: 50px;
+            background-color: rgb(1, 6, 17);
+            position:relative;
+            top:30px;
+            right:50px;
+        }
+        #d2:nth-child(1){
+        transform:rotate(0) translate(150px) rotate(0);
+        }
+        #d3:nth-child(2){
+            transform:rotate(120deg) translate(150px) rotate(0);
+        }
+        #d4:nth-child(3){
+            transform:rotate(240deg) translate(150px) rotate(0);
+        }
+       #d3{
+            width:200px;
+            height:40px;
+            border-radius: 50px;
+            background-color: rgb(1, 6, 17);
+            position:relative;
+            right:200px;
+            bottom:20px;
+        }
+       #d4{
+            position:relative;
+            bottom:20px;
+            left:30px;
+            border-radius: 50px;
+            width:40px;
+            height:190px;
+            background-color:rgb(240, 8, 116);
+        }
+        @keyframes spin{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+    <div id="d2"></div><br>
+    <div id="d3"></div><br>
+    <div id="d4"></div><br>
+    <div id="d5"></div>
+</div>
+    
+</div>
+</body>
+</html>
